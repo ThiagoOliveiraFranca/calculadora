@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid 
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    background:linear-gradient(to right,rgb(161, 67, 216), rgb(210, 58, 71))
 }
 
 .fila1, .fila2,.fila3, .fila4 {
@@ -17,8 +17,13 @@ body {
     flex-direction: row;
 }
 
+.teclado {
+    border: 1px solid gray;
+}
+
 .mostrar {
-    height: 80px;
+    height: 90px;
+    background-color: white;
     display: grid;
     align-items: center;
     justify-items: right;
@@ -26,27 +31,31 @@ body {
 
 #tela {
     border: 0px;
-    font-size: 22px;
+    font-size: 24px;
     margin-right: 10px;
 }
 
 .numeros , .operacao , .funcao{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
+
 
 #resetar_button {
     background-color: rgb(255, 80, 80);
 }
 #resetar_button:hover {
-    background-color: rgb(209, 52, 52);
+    background-color: rgb(224, 63, 63);
+    cursor: pointer;
 }
 
 .numeros:hover {
-    background-color: lightblue;
+    background-color: lightgray;
+    cursor: pointer;   
 }
 
 .operacao {
@@ -54,5 +63,6 @@ body {
 }
 .operacao:hover {
     background-color: rgb(64, 64, 206);
+    cursor: pointer;
 }
 
