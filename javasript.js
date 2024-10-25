@@ -95,3 +95,16 @@ function resetar() {
     adicionar_ao_display("")
 
 }
+
+
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+    // Verifica se a tecla pressionada é um número ou um operador
+    if (!isNaN(key)) {
+        concatenar_numero(key); // Para números
+    } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+        operacao(key); // Para operadores
+    } else if (key === 'Enter') {
+        operacao('='); // Para igual
+    }
+});
