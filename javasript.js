@@ -45,7 +45,10 @@ function operacao(operando)  {
         }
 
         adicionar_ao_display(lista[0])
-        
+        num = lista[0]
+        lista = []
+        qnt_multdiv = 0;
+        qnt_simples = 0;        
     }
         
     }
@@ -89,6 +92,6 @@ function resetar() {
     qnt_multdiv = 0;
     qnt_simples = 0;
     num = ""
-    adicionar_ao_display(0)
+    adicionar_ao_display("")
 
 }
