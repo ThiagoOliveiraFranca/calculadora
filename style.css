@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px solid 
+}
+
+body {
+    height: 100dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.fila1, .fila2,.fila3, .fila4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.mostrar {
+    height: 80px;
+    display: grid;
+    align-items: center;
+    justify-items: right;
+}
+
+#tela {
+    border: 0px;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.numeros , .operacao , .funcao{
+    width: 80px;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#resetar_button {
+    background-color: rgb(255, 80, 80);
+}
+#resetar_button:hover {
+    background-color: rgb(209, 52, 52);
+}
+
+.numeros:hover {
+    background-color: lightblue;
+}
+
+.operacao {
+    background-color: cornflowerblue;
+}
+.operacao:hover {
+    background-color: rgb(64, 64, 206);
+}
+
